@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign lot = site.pages | where: "year", page.year | where: "layout", "lot" | first %}
+{% assign bottles = site.pages | where: "year", page.year | where: "layout", "bottle" | sort: "order" %}
+<p class="kicker"><a href="{{ lot.url | relative_url }}">{{ lot.title }} · {{ page.year }}</a></p>
+<h1>{{ page.title }}</h1>
+<p class="sub">{{ page.place }}</p>
+
+{{ content }}
+
+{% if page.bottle %}<p class="bottle">{{ page.bottle }}</p>{% endif %}
+
+<p class="back">Part of the <a href="{{ lot.url | relative_url }}">{{ lot.title }}</a> lot at {{ lot.event }}, {{ lot.event_date }}.{% if lot.bid_note %} {{ lot.bid_note }}{% endif %}</p>
+
+<nav><ul>
+{% for b in bottles %}{% unless b.url == page.url %}  <li><a href="{{ b.url | relative_url }}">{{ b.title }}</a></li>
+{% endunless %}{% endfor %}</ul></nav>
