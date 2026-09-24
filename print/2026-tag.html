@@ -20,23 +20,25 @@ body { font-family: "Instrument Sans", system-ui, sans-serif; color: #111; backg
 body.kraft .sheet { background: #c4a27a; }   /* on-screen kraft simulation only */
 
 /* Tag */
-.tag { display: grid; grid-template-columns: 1fr 2.05in; gap: .3in; align-items: center;
-        padding: .3in .35in .3in .75in; }
-.hole { position: absolute; left: .28in; top: 50%; width: .22in; height: .22in; margin-top: -.11in;
+.tag { display: grid; grid-template-columns: 1fr 1.8in; gap: .25in; align-items: center;
+        padding: .3in .7in; }
+/* Punch marks: both ends, a third of the way down (two-thirds toward the top) */
+.hole { position: absolute; top: 1in; width: .22in; height: .22in; margin-top: -.11in;
          border: 1px dashed #111; border-radius: 50%; }
+.hole.left { left: .24in; } .hole.right { right: .24in; }
 .event { font-size: 8.5pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 .06in; }
-h1 { font-size: 25pt; font-weight: 650; letter-spacing: -.02em; line-height: 1; margin: 0 0 .12in; }
-.scan { font-size: 11pt; font-weight: 500; margin: 0 0 .16in; white-space: nowrap; }
-.bottles { font-size: 9.5pt; line-height: 1.45; margin: 0; padding: .1in 0 0; border-top: 1px solid #111; }
+h1 { font-size: 23pt; font-weight: 650; letter-spacing: -.02em; line-height: 1; margin: 0 0 .12in; }
+.scan { font-size: 10.5pt; font-weight: 500; margin: 0 0 .16in; white-space: nowrap; }
+.bottles { font-size: 9pt; line-height: 1.45; margin: 0; padding: .1in 0 0; border-top: 1px solid #111; }
 .bottles span { display: block; }
 .qr { text-align: center; }
-.qr svg { width: 1.8in; height: 1.8in; display: block; margin: 0 auto; }
+.qr svg { width: 1.6in; height: 1.6in; display: block; margin: 0 auto; }
 .url { font-size: 7.5pt; margin-top: .07in; letter-spacing: .01em; }
 
 /* Patch: cut on the dashed line, paste over the tag's QR */
 .patch { display: flex; align-items: center; justify-content: center; gap: .5in; }
 .cut { border: 1px dashed #999; padding: 0; background: #fff; }
-.cut svg { width: 2.04in; height: 2.04in; display: block; }   /* 1.8in code + quiet zone */
+.cut svg { width: 1.81in; height: 1.81in; display: block; }   /* 1.6in code + quiet zone */
 .patch-note { font-size: 9pt; width: 2.4in; color: #444; }
 
 .controls { font: 13px system-ui; text-align: center; padding: 10px; }
@@ -49,7 +51,8 @@ h1 { font-size: 25pt; font-weight: 650; letter-spacing: -.02em; line-height: 1; 
 </div>
 
 <section class="sheet tag" aria-label="Tag">
-  <span class="hole" aria-hidden="true"></span>
+  <span class="hole left" aria-hidden="true"></span>
+  <span class="hole right" aria-hidden="true"></span>
   <div>
     <p class="event">Wild Night Out · 2026</p>
     <h1>Washington Whiskeys</h1>
