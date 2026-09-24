@@ -8,7 +8,7 @@ place: Seattle
 bottle: Westland American Single Malt Whiskey, 700ml
 hero: /assets/img/2026/westland
 hero_alt: Puget Sound from Discovery Park beach, low sun through broken cloud
-hero_position: center 42%
+hero_position: center 58%
 accent: "#3f5b70"
 accent_dark: "#9dbad0"
 specs:
