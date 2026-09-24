@@ -1,0 +1,14 @@
+/* Placeholder styling. Visual design still to come. */
+:root { --text: #1a1a1a; --muted: #666; --bg: #fff; --link: #1a4d2e; }
+@media (prefers-color-scheme: dark) {
+  :root { --text: #eee; --muted: #aaa; --bg: #121212; --link: #8fc9a3; }
+}
+body {
+  margin: 0 auto; max-width: 40rem; padding: 1.5rem 1rem 3rem;
+  font: 1.125rem/1.6 Georgia, serif; color: var(--text); background: var(--bg);
+}
+a { color: var(--link); }
+.home { font-size: .9rem; text-decoration: none; }
+h1 { line-height: 1.2; margin-bottom: .25rem; }
+.sub { color: var(--muted); margin-top: 0; }
+nav ul { list-style: none; padding: 0; display: flex; gap: 1.25rem; flex-wrap: wrap; }
