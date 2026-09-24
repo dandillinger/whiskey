@@ -2,4 +2,5 @@ title: Washington Whiskeys
 description: A Washington Wild auction lot, one year at a time.
 permalink: pretty
 exclude:
+  - print
   - README.md

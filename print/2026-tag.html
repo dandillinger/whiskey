@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Washington Whiskeys tag · 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&display=swap">
+<style>
+/* Print at 100% / "Actual size", margins None, on 6 x 3 in stock.
+   Page 1: the tag, for kraft paper. Page 2: a white QR patch to paste on if the
+   QR won't scan reliably straight off the kraft. */
+@page { size: 6in 3in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: "Instrument Sans", system-ui, sans-serif; color: #111; background: #ddd; }
+.sheet { width: 6in; height: 3in; position: relative; overflow: hidden; background: #fff;
+         break-after: page; margin: 0 auto 0.25in; }
+@media print { body { background: none; } .sheet { margin: 0; background: none; } .screen-only { display: none; } }
+body.kraft .sheet { background: #c4a27a; }   /* on-screen kraft simulation only */
+
+/* Tag */
+.tag { display: grid; grid-template-columns: 1fr 2.05in; gap: .3in; align-items: center;
+        padding: .3in .35in .3in .75in; }
+.hole { position: absolute; left: .28in; top: 50%; width: .22in; height: .22in; margin-top: -.11in;
+         border: 1px dashed #111; border-radius: 50%; }
+.event { font-size: 8.5pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 .06in; }
+h1 { font-size: 25pt; font-weight: 650; letter-spacing: -.02em; line-height: 1; margin: 0 0 .12in; }
+.scan { font-size: 11pt; font-weight: 500; margin: 0 0 .16in; white-space: nowrap; }
+.bottles { font-size: 9.5pt; line-height: 1.45; margin: 0; padding: .1in 0 0; border-top: 1px solid #111; }
+.bottles span { display: block; }
+.qr { text-align: center; }
+.qr svg { width: 1.8in; height: 1.8in; display: block; margin: 0 auto; }
+.url { font-size: 7.5pt; margin-top: .07in; letter-spacing: .01em; }
+
+/* Patch: cut on the dashed line, paste over the tag's QR */
+.patch { display: flex; align-items: center; justify-content: center; gap: .5in; }
+.cut { border: 1px dashed #999; padding: 0; background: #fff; }
+.cut svg { width: 2.04in; height: 2.04in; display: block; }   /* 1.8in code + quiet zone */
+.patch-note { font-size: 9pt; width: 2.4in; color: #444; }
+
+.controls { font: 13px system-ui; text-align: center; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="controls screen-only">
+  <label><input type="checkbox" onchange="document.body.classList.toggle('kraft', this.checked)"> Preview on kraft</label>
+  · Print: Actual size / 100%, margins None, paper 6 × 3 in
+</div>
+
+<section class="sheet tag" aria-label="Tag">
+  <span class="hole" aria-hidden="true"></span>
+  <div>
+    <p class="event">Wild Night Out · 2026</p>
+    <h1>Washington Whiskeys</h1>
+    <p class="scan">Scan to learn about each bottle &rarr;</p>
+    <p class="bottles">
+      <span>Westland Flagship American Single Malt</span>
+      <span>Woodinville Straight Bourbon</span>
+      <span>Dry Fly Straight Triticale</span>
+    </p>
+  </div>
+  <div class="qr">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" class="segno"><path class="qrline" stroke="#111" d="M0 0.5h7m2 0h1m2 0h1m3 0h3m2 0h2m3 0h7m-33 1h1m5 0h1m1 0h1m1 0h5m3 0h2m1 0h2m3 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m6 0h2m1 0h1m2 0h1m1 0h4m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h6m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h1m4 0h1m4 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m5 0h1m3 0h2m1 0h1m3 0h2m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h3m1 0h2m1 0h1m2 0h1m3 0h3m-24 1h1m1 0h4m1 0h3m1 0h3m1 0h2m6 0h3m1 0h2m1 0h1m-32 1h2m2 0h1m2 0h3m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m4 0h3m-31 1h2m4 0h3m5 0h1m1 0h1m3 0h1m1 0h2m1 0h1m2 0h5m-26 1h3m1 0h2m2 0h1m2 0h1m1 0h1m3 0h4m2 0h1m1 0h1m-33 1h2m2 0h4m3 0h2m2 0h1m1 0h1m1 0h1m1 0h3m2 0h2m-24 1h2m3 0h1m1 0h1m1 0h2m1 0h6m1 0h3m1 0h1m1 0h2m-31 1h4m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h4m1 0h1m1 0h1m2 0h1m-27 1h2m2 0h1m3 0h1m2 0h1m2 0h2m1 0h1m3 0h2m2 0h3m1 0h1m-33 1h2m1 0h8m2 0h3m2 0h1m1 0h1m2 0h1m1 0h5m-30 1h1m1 0h2m1 0h1m4 0h2m3 0h2m2 0h2m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m-32 1h3m1 0h3m1 0h1m1 0h2m6 0h5m3 0h1m1 0h2m1 0h1m-32 1h2m4 0h1m2 0h2m3 0h2m7 0h1m1 0h1m1 0h3m1 0h1m-31 1h1m1 0h3m2 0h7m2 0h1m2 0h3m1 0h1m1 0h1m1 0h1m1 0h2m-33 1h6m2 0h2m2 0h2m1 0h4m2 0h4m2 0h4m-31 1h1m2 0h1m1 0h2m4 0h3m2 0h2m1 0h2m1 0h7m1 0h3m-33 1h1m2 0h3m1 0h4m1 0h4m2 0h3m1 0h1m1 0h4m2 0h1m1 0h1m-33 1h3m2 0h5m1 0h1m1 0h2m1 0h3m1 0h1m2 0h6m3 0h1m-25 1h7m1 0h2m3 0h1m2 0h1m3 0h1m1 0h2m-32 1h7m2 0h1m2 0h1m2 0h1m3 0h2m2 0h2m1 0h1m1 0h1m1 0h1m-31 1h1m5 0h1m1 0h3m1 0h1m4 0h1m2 0h5m3 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h4m3 0h2m2 0h8m2 0h1m-32 1h1m1 0h3m1 0h1m1 0h3m1 0h4m1 0h2m3 0h4m1 0h1m1 0h2m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h2m1 0h6m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h2m-33 1h1m5 0h1m1 0h2m2 0h3m1 0h2m1 0h2m2 0h1m3 0h2m1 0h3m-33 1h7m2 0h3m1 0h1m1 0h1m2 0h2m4 0h1m1 0h3"/></svg>
+    <div class="url">whiskey.dandillinger.com/2026</div>
+  </div>
+</section>
+
+<section class="sheet patch" aria-label="White QR patch">
+  <div class="cut"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" class="segno"><path class="qrline" stroke="#111" d="M4 4.5h7m2 0h1m2 0h1m3 0h3m2 0h2m3 0h7m-33 1h1m5 0h1m1 0h1m1 0h5m3 0h2m1 0h2m3 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m6 0h2m1 0h1m2 0h1m1 0h4m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h6m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h1m4 0h1m4 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m5 0h1m3 0h2m1 0h1m3 0h2m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h3m1 0h2m1 0h1m2 0h1m3 0h3m-24 1h1m1 0h4m1 0h3m1 0h3m1 0h2m6 0h3m1 0h2m1 0h1m-32 1h2m2 0h1m2 0h3m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m4 0h3m-31 1h2m4 0h3m5 0h1m1 0h1m3 0h1m1 0h2m1 0h1m2 0h5m-26 1h3m1 0h2m2 0h1m2 0h1m1 0h1m3 0h4m2 0h1m1 0h1m-33 1h2m2 0h4m3 0h2m2 0h1m1 0h1m1 0h1m1 0h3m2 0h2m-24 1h2m3 0h1m1 0h1m1 0h2m1 0h6m1 0h3m1 0h1m1 0h2m-31 1h4m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h4m1 0h1m1 0h1m2 0h1m-27 1h2m2 0h1m3 0h1m2 0h1m2 0h2m1 0h1m3 0h2m2 0h3m1 0h1m-33 1h2m1 0h8m2 0h3m2 0h1m1 0h1m2 0h1m1 0h5m-30 1h1m1 0h2m1 0h1m4 0h2m3 0h2m2 0h2m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m-32 1h3m1 0h3m1 0h1m1 0h2m6 0h5m3 0h1m1 0h2m1 0h1m-32 1h2m4 0h1m2 0h2m3 0h2m7 0h1m1 0h1m1 0h3m1 0h1m-31 1h1m1 0h3m2 0h7m2 0h1m2 0h3m1 0h1m1 0h1m1 0h1m1 0h2m-33 1h6m2 0h2m2 0h2m1 0h4m2 0h4m2 0h4m-31 1h1m2 0h1m1 0h2m4 0h3m2 0h2m1 0h2m1 0h7m1 0h3m-33 1h1m2 0h3m1 0h4m1 0h4m2 0h3m1 0h1m1 0h4m2 0h1m1 0h1m-33 1h3m2 0h5m1 0h1m1 0h2m1 0h3m1 0h1m2 0h6m3 0h1m-25 1h7m1 0h2m3 0h1m2 0h1m3 0h1m1 0h2m-32 1h7m2 0h1m2 0h1m2 0h1m3 0h2m2 0h2m1 0h1m1 0h1m1 0h1m-31 1h1m5 0h1m1 0h3m1 0h1m4 0h1m2 0h5m3 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h4m3 0h2m2 0h8m2 0h1m-32 1h1m1 0h3m1 0h1m1 0h3m1 0h4m1 0h2m3 0h4m1 0h1m1 0h2m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h2m1 0h6m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h2m-33 1h1m5 0h1m1 0h2m2 0h3m1 0h2m1 0h2m2 0h1m3 0h2m1 0h3m-33 1h7m2 0h3m1 0h1m1 0h1m2 0h2m4 0h1m1 0h3"/></svg></div>
+  <p class="patch-note screen-only">Backup: print this page on white paper, cut on the dashed line and paste over the QR code on the kraft tag if it doesn't scan reliably.</p>
+</section>
+</body>
+</html>
