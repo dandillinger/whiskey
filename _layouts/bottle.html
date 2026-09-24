@@ -3,16 +3,36 @@ layout: default
 ---
 {% assign lot = site.pages | where: "year", page.year | where: "layout", "lot" | first %}
 {% assign bottles = site.pages | where: "year", page.year | where: "layout", "bottle" | sort: "order" %}
-<p class="kicker"><a href="{{ lot.url | relative_url }}">{{ lot.title }} · {{ page.year }}</a></p>
-<h1>{{ page.title }}</h1>
-<p class="sub">{{ page.place }}</p>
+{% include hero.html src=page.hero alt=page.hero_alt %}
+<main class="page">
+  <p class="kicker"><a href="{{ lot.url | relative_url }}">{{ lot.title }} · {{ page.year }}</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="place">{{ page.place }}</p>
 
+  <div class="prose">
 {{ content }}
+  </div>
 
-{% if page.bottle %}<p class="bottle">{{ page.bottle }}</p>{% endif %}
+  {% if page.specs %}
+  <section class="specs" aria-label="The bottle">
+    <h2>The bottle</h2>
+    <dl>
+    {% for s in page.specs %}
+      <dt>{{ s.label }}</dt><dd>{{ s.value }}</dd>
+    {% endfor %}
+    </dl>
+  </section>
+  {% endif %}
 
-<p class="back">Part of the <a href="{{ lot.url | relative_url }}">{{ lot.title }}</a> lot at {{ lot.event }}, {{ lot.event_date }}.{% if lot.bid_note %} {{ lot.bid_note }}{% endif %}</p>
+  <p class="back">Part of the <a href="{{ lot.url | relative_url }}">{{ lot.title }}</a> lot at {{ lot.event }}, {{ lot.event_date }}.{% if lot.bid_note %} {{ lot.bid_note }}{% endif %}</p>
 
-<nav><ul>
-{% for b in bottles %}{% unless b.url == page.url %}  <li><a href="{{ b.url | relative_url }}">{{ b.title }}</a></li>
-{% endunless %}{% endfor %}</ul></nav>
+  <nav class="siblings" aria-label="Other bottles">
+  {% for b in bottles %}{% unless b.url == page.url %}
+    <a class="sibling" href="{{ b.url | relative_url }}">
+      {% if b.hero %}<img src="{{ b.hero | append: '-1200.jpg' | relative_url }}" alt="" loading="lazy">{% endif %}
+      <span class="sibling-title">{{ b.title }}</span>
+      <span class="sibling-place">{{ b.place }}</span>
+    </a>
+  {% endunless %}{% endfor %}
+  </nav>
+</main>

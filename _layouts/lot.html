@@ -2,16 +2,25 @@
 layout: default
 ---
 {% assign bottles = site.pages | where: "year", page.year | where: "layout", "bottle" | sort: "order" %}
-<p class="kicker">{{ page.event }} · {{ page.event_date }}</p>
-<h1>{{ page.title }}</h1>
-{% if page.place_line %}<p class="sub">{{ page.place_line }}</p>{% endif %}
+{% include hero.html src=page.hero alt=page.hero_alt %}
+<main class="page">
+  <p class="kicker">{{ page.event }} · {{ page.event_date }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.place_line %}<p class="place">{{ page.place_line }}</p>{% endif %}
 
+  <div class="prose">
 {{ content }}
+  </div>
 
-<ul class="bottles">
-{% for b in bottles %}
-  <li><a href="{{ b.url | relative_url }}">{{ b.title }}</a><span>{{ b.place }}</span></li>
-{% endfor %}
-</ul>
+  <nav class="siblings" aria-label="The bottles">
+  {% for b in bottles %}
+    <a class="sibling" href="{{ b.url | relative_url }}">
+      {% if b.hero %}<img src="{{ b.hero | append: '-1200.jpg' | relative_url }}" alt="" loading="lazy">{% endif %}
+      <span class="sibling-title">{{ b.title }}</span>
+      <span class="sibling-place">{{ b.place }}</span>
+    </a>
+  {% endfor %}
+  </nav>
 
-<p class="lot">{{ page.contents }}{% if page.value %} · ${{ page.value }} stated retail{% endif %}{% if page.donor %}<br>Donated by {{ page.donor }}{% endif %}</p>
+  <p class="back">{{ page.contents }}{% if page.value %} · ${{ page.value }} stated retail{% endif %}{% if page.donor %}<br>Donated by {{ page.donor }}{% endif %}</p>
+</main>

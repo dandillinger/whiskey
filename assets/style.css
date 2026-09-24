@@ -1,19 +1,81 @@
-/* Placeholder styling. Visual design still to come. */
-:root { --text: #1a1a1a; --muted: #666; --bg: #fff; --link: #1a4d2e; --rule: #ddd; }
+/* dandillinger.com theme. Palette from the ponderosa photo:
+   bark rust, conifer green, dry-grass straw, warm paper. */
+:root {
+  --paper: #f7f4ee;
+  --ink: #1d201b;
+  --muted: #5f6459;
+  --rule: #ddd6c8;
+  --rust: #9a4527;     /* ponderosa bark / whiskey */
+  --green: #2c4a35;    /* conifer */
+  --straw: #efe6d2;    /* dry grass, card fill */
+  --measure: 38rem;
+  --font: "Instrument Sans", system-ui, -apple-system, sans-serif;
+}
 @media (prefers-color-scheme: dark) {
-  :root { --text: #eee; --muted: #aaa; --bg: #121212; --link: #8fc9a3; --rule: #333; }
+  :root {
+    --paper: #141612; --ink: #e9e6de; --muted: #a3a79b; --rule: #2e3129;
+    --rust: #e08a5f; --green: #9cc3a5; --straw: #1f221c;
+  }
 }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0 auto; max-width: 40rem; padding: 1.5rem 1rem 3rem;
-  font: 1.125rem/1.6 Georgia, serif; color: var(--text); background: var(--bg);
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 1.125rem/1.65 var(--font);
 }
-a { color: var(--link); }
-.home { font-size: .9rem; text-decoration: none; }
-.kicker { font-size: .9rem; color: var(--muted); margin-bottom: 0; }
-h1 { line-height: 1.2; margin: .25rem 0; }
-.sub { color: var(--muted); margin-top: 0; }
-.bottles { list-style: none; padding: 0; }
-.bottles li { padding: .75rem 0; border-top: 1px solid var(--rule); }
-.bottles span { display: block; color: var(--muted); font-size: .95rem; }
-.bottle, .lot, .back { font-size: .95rem; color: var(--muted); }
-nav ul { list-style: none; padding: 0; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+a { color: var(--green); text-underline-offset: .18em; text-decoration-thickness: 1px; }
+a:hover { color: var(--rust); }
+
+/* Header / footer */
+.site-header, .site-footer {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: 1rem clamp(1rem, 4vw, 2.5rem); font-size: .9rem;
+}
+.wordmark { font-weight: 600; letter-spacing: -.01em; color: var(--ink); text-decoration: none; }
+.site-section { color: var(--muted); }
+.site-footer { color: var(--muted); border-top: 1px solid var(--rule); margin-top: 4rem; }
+
+/* Hero: full color, full bleed, never under text */
+.hero { margin: 0; }
+.hero img { display: block; width: 100%; height: clamp(16rem, 58vh, 40rem); object-fit: cover; }
+
+/* Page column */
+.page { max-width: var(--measure); margin: 0 auto; padding: 2.25rem 1rem 0; }
+.kicker { margin: 0 0 .5rem; font-size: .85rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
+.kicker a { color: var(--rust); text-decoration: none; }
+h1 {
+  margin: 0; font-weight: 650; letter-spacing: -.03em; line-height: 1;
+  font-size: clamp(2.75rem, 9vw, 4.75rem);
+}
+.place { margin: .6rem 0 2rem; font-size: 1.25rem; color: var(--muted); }
+
+/* Body copy; ### headings in copy become section labels */
+.prose p { margin: 0 0 1.15em; }
+.prose h2, .prose h3, .specs h2 {
+  margin: 2.5rem 0 .6rem; padding-top: 1.25rem; border-top: 2px solid var(--rust);
+  font-size: .85rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--rust);
+}
+
+/* Bottle card */
+.specs { margin-top: 2.5rem; background: var(--straw); padding: 0 1.25rem 1.25rem; border-radius: 4px; }
+.specs h2 { border-top: 0; padding-top: 1.25rem; margin-top: 0; }
+.specs dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .45rem 1.25rem; font-size: 1rem; }
+.specs dt { color: var(--muted); }
+.specs dd { margin: 0; }
+@media (max-width: 30rem) { .specs dl { grid-template-columns: 1fr; gap: 0; } .specs dd { margin-bottom: .6rem; } }
+
+.back { margin: 2rem 0; font-size: 1rem; color: var(--muted); }
+
+/* Other bottles */
+.siblings { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; margin: 2rem 0; }
+.sibling { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); }
+.sibling img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; margin-bottom: .5rem; }
+.sibling:not(:has(img))::before { content: ""; display: block; aspect-ratio: 4 / 3; background: var(--straw); border-radius: 4px; margin-bottom: .5rem; }
+.sibling-title { font-weight: 600; }
+.sibling-place { font-size: .95rem; color: var(--muted); }
+.sibling:hover .sibling-title { color: var(--rust); }
+
+/* Year index */
+.years { list-style: none; padding: 0; }
+.years li { padding: .9rem 0; border-top: 1px solid var(--rule); }
+.years span { display: block; color: var(--muted); font-size: .95rem; }
