@@ -1,0 +1,4 @@
+{% if include.page.accent or include.page.accent_dark %}<style>
+:root { {% if include.page.accent %}--accent: {{ include.page.accent }};{% endif %} }
+{% if include.page.accent_dark %}@media (prefers-color-scheme: dark) { :root { --accent: {{ include.page.accent_dark }}; } }{% endif %}
+</style>{% endif %}

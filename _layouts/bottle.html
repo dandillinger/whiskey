@@ -3,8 +3,9 @@ layout: default
 ---
 {% assign lot = site.pages | where: "year", page.year | where: "layout", "lot" | first %}
 {% assign bottles = site.pages | where: "year", page.year | where: "layout", "bottle" | sort: "order" %}
-{% include hero.html src=page.hero alt=page.hero_alt %}
-<main class="page">
+<div class="stage">
+{% include hero.html src=page.hero position=page.hero_position %}
+<main class="page{% if page.hero %} has-backdrop{% endif %}">
   <p class="kicker"><a href="{{ lot.url | relative_url }}">{{ lot.title }} · {{ page.year }}</a></p>
   <h1>{{ page.title }}</h1>
   <p class="place">{{ page.place }}</p>
@@ -36,3 +37,4 @@ layout: default
   {% endunless %}{% endfor %}
   </nav>
 </main>
+</div>

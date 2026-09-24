@@ -1,7 +1,7 @@
 {% if include.src %}
-<figure class="hero">
+<div class="backdrop" aria-hidden="true">
   <img src="{{ include.src | append: '-2400.jpg' | relative_url }}"
        srcset="{{ include.src | append: '-1200.jpg' | relative_url }} 1200w, {{ include.src | append: '-2400.jpg' | relative_url }} 2400w"
-       sizes="100vw" alt="{{ include.alt }}">
-</figure>
+       sizes="100vw" alt=""{% if include.position %} style="object-position: {{ include.position }}"{% endif %}>
+</div>
 {% endif %}

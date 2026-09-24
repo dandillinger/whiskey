@@ -18,5 +18,8 @@ specs:
     value: Most from family farms within thirty miles of the distillery
   - label: Ownership
     value: Majority stake held by Caymus Vineyards (Napa) since 2024
+hero_position: center 40%
+accent: "#9a4527"
+accent_dark: "#e08a5f"
 ---
 Page in progress.

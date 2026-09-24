@@ -2,8 +2,9 @@
 layout: default
 ---
 {% assign bottles = site.pages | where: "year", page.year | where: "layout", "bottle" | sort: "order" %}
-{% include hero.html src=page.hero alt=page.hero_alt %}
-<main class="page">
+<div class="stage">
+{% include hero.html src=page.hero position=page.hero_position %}
+<main class="page{% if page.hero %} has-backdrop{% endif %}">
   <p class="kicker">{{ page.event }} · {{ page.event_date }}</p>
   <h1>{{ page.title }}</h1>
   {% if page.place_line %}<p class="place">{{ page.place_line }}</p>{% endif %}
@@ -24,3 +25,4 @@ layout: default
 
   <p class="back">{{ page.contents }}{% if page.value %} · ${{ page.value }} stated retail{% endif %}{% if page.donor %}<br>Donated by {{ page.donor }}{% endif %}</p>
 </main>
+</div>
