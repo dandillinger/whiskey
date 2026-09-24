@@ -32,10 +32,11 @@ brief stay in `~/Documents/wawild/writing/`.
    ```
 
    Scan it with a phone before printing. Use the SVG for print, since it scales without blur.
-6. Table tag: copy `print/2026-tag.html` to `print/YYYY-tag.html`, update the QR and
-   text, and print it at actual size on 6 × 3 in stock. Page 2 is a white QR patch to
-   paste on if the code won't scan straight off kraft paper. `print/` is kept out of
-   the site build.
+6. Table tag: copy `print/2026-tag.html` and `print/2026-qr.html` to `YYYY-…`, then
+   update the QR and text. Print the tag on Letter kraft at actual size and cut on the
+   dotted line (6 × 3 in, with X marks for the string holes). `YYYY-qr.html` is a
+   white backup QR patch to paste on if the code won't scan off kraft. `print/` is
+   kept out of the site build.
 
 Past years stay up as they are. Don't rename a year's slugs after its card is
 printed.
