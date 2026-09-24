@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign lot = site.pages | where: "year", page.year | where: "layout", "lot" | first %}
 {% assign bottles = site.pages | where: "year", page.year | where: "layout", "bottle" | sort: "order" %}
+{% if lot.notice %}<p class="notice">{{ lot.notice }}</p>{% endif %}
 <div class="stage">
 {% include hero.html src=page.hero position=page.hero_position %}
 <main class="page{% if page.hero %} has-backdrop{% endif %}">

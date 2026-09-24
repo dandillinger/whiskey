@@ -35,6 +35,12 @@ a:hover { color: var(--accent); }
 .site-section { color: var(--muted); }
 .site-footer { color: var(--muted); border-top: 1px solid var(--rule); margin-top: 4rem; }
 
+/* Notice strip under the header */
+.notice {
+  margin: 0; padding: .55rem clamp(1rem, 4vw, 2.5rem); position: relative; z-index: 2;
+  background: var(--accent); color: var(--paper); font-size: .9rem; font-weight: 600; text-align: center;
+}
+
 /* Backdrop: the page photo fades back behind the title and opening copy.
    Screened with the paper color so text stays readable in both modes. */
 .stage { position: relative; }

@@ -10,6 +10,7 @@ contents: Three bottles
 value: 115
 donor: Dan Dillinger, WA Wild Board Member
 bid_note: Bid on the lot at the silent auction table.
+notice: "[!] Copy will be completed and edited by Wild Night Out"
 cta_text: Thank you for supporting Washington Wild. Sign up for action alerts to help protect wild lands and waters across the state.
 cta_label: Sign up for action alerts
 cta_url:  # TODO: WA Wild action-alert signup link. The button stays hidden until this is set
