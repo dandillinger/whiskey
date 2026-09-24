@@ -24,7 +24,14 @@ brief stay in `~/Documents/wawild/writing/`.
    and the event date, value and donor on the lot page
 3. Write the copy under the front matter, applying `wawild/writing/HOUSESTYLE.MD`
 4. At launch, delete `draft: true` from each file to drop the `noindex`
-5. The QR code on that year's card points at `https://whiskey.dandillinger.com/YYYY/`
+5. Make the QR code for that year's card. It goes into `qr/YYYY.svg` for print and `qr/YYYY.png`:
+
+   ```sh
+   python3 -m venv /tmp/qrenv && /tmp/qrenv/bin/pip install -q segno
+   /tmp/qrenv/bin/python -c "import segno; q=segno.make('https://whiskey.dandillinger.com/YYYY/', error='q'); q.save('qr/YYYY.svg', scale=10, border=4); q.save('qr/YYYY.png', scale=20, border=4)"
+   ```
+
+   Scan it with a phone before printing. Use the SVG for print, since it scales without blur.
 
 Past years stay up as they are. Don't rename a year's slugs after its card is
 printed.
