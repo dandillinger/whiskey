@@ -1,0 +1,6 @@
+{% if include.lot.cta_text %}
+<aside class="cta">
+  <p>{{ include.lot.cta_text }}</p>
+  {% if include.lot.cta_url %}<a class="button" href="{{ include.lot.cta_url }}">{{ include.lot.cta_label | default: "Sign up" }}</a>{% endif %}
+</aside>
+{% endif %}

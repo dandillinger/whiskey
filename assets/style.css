@@ -71,8 +71,17 @@ h1 {
   font-size: .85rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
 }
 
+/* Call to action */
+.cta { margin: 2rem 0; padding: 1.25rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.cta p { margin: 0 0 .9rem; font-weight: 500; }
+.button {
+  display: inline-block; padding: .65rem 1.2rem; border-radius: 4px;
+  background: var(--accent); color: var(--paper); font-weight: 600; font-size: 1rem; text-decoration: none;
+}
+.button:hover { color: var(--paper); filter: brightness(1.1); }
+
 /* Bottle card */
-.specs { margin-top: 2.5rem; background: var(--straw); padding: 0 1.25rem 1.25rem; border-radius: 4px; }
+.specs { margin-top: 1.5rem; background: var(--straw); padding: 0 1.25rem 1.25rem; border-radius: 4px; }
 .specs h2 { border-top: 0; padding-top: 1.25rem; margin-top: 0; }
 .specs dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .45rem 1.25rem; font-size: 1rem; }
 .specs dt { color: var(--muted); }
