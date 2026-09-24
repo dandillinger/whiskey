@@ -3,7 +3,7 @@ layout: bottle
 year: 2026
 order: 3
 draft: true
-title: Dry Fly
+title: Dry Fly Straight Triticale
 place: Spokane
 hero: /assets/img/2026/dry-fly
 hero_alt: Ponderosa pines with rust-red bark at a forest edge above dry grass
