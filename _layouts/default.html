@@ -13,13 +13,14 @@
   {% include accent.html page=page %}
 </head>
 <body>
+  {% if page.year %}{% assign nav_lot = site.pages | where: "year", page.year | where: "layout", "lot" | first %}{% endif %}
   <header class="site-header">
-    <a class="wordmark" href="{{ '/' | relative_url }}">Dan Dillinger</a>
-    <span class="site-section">{{ site.title }}</span>
+    <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    {% if nav_lot %}<a class="site-section" href="{{ nav_lot.url | relative_url }}">{{ nav_lot.event }} {{ page.year }}</a>{% endif %}
   </header>
 {{ content }}
   <footer class="site-footer">
-    <span>Dan Dillinger</span>
+    <span>A silent auction lot benefiting <a href="https://wawild.org">Washington Wild</a></span>
   </footer>
 </body>
 </html>

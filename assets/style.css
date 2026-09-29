@@ -33,6 +33,9 @@ a:hover { color: var(--accent); }
 }
 .wordmark { font-weight: 600; letter-spacing: -.01em; color: var(--ink); text-decoration: none; }
 .site-section { color: var(--muted); }
+a.site-section { text-decoration: none; }
+a.site-section:hover { color: var(--ink); }
+.site-footer a { color: inherit; }
 .site-footer { color: var(--muted); border-top: 1px solid var(--rule); margin-top: 4rem; }
 
 /* Notice strip under the header */
