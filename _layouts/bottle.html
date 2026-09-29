@@ -28,8 +28,6 @@ layout: default
 {{ content }}
   </div>
 
-  {% include cta.html lot=lot %}
-
   <p class="back">Part of the <a href="{{ lot.url | relative_url }}">{{ lot.title }}</a> lot at {{ lot.event }}, {{ lot.event_date }}.{% if lot.bid_note %} {{ lot.bid_note }}{% endif %}</p>
 
   <nav class="siblings" aria-label="Other bottles">

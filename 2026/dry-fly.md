@@ -14,8 +14,6 @@ specs:
     value: "90"
   - label: Aged
     value: Three years in new 53-gallon American oak
-  - label: Ownership
-    value: Majority stake held by Caymus Vineyards (Napa) since 2024
 hero_position: center 40%
 accent: "#9a4527"
 accent_dark: "#e08a5f"
