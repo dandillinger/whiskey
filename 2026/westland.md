@@ -19,16 +19,34 @@ specs:
   - label: Founded
     value: 2011
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+My wife and I used to live in a century-old apartment building at the top of a hill in Eastlake. Uphill from there was Capitol Hill. Across Lake Union was Queen Anne Hill. The hills and Puget Sound itself were shaped by ice.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Seventeen thousand years ago, the Puget Lobe of the Cordilleran Ice Sheet was three thousand feet thick where our old apartment building still stands. Scientists believe there were seven glacial advances and retreats over the Puget Sound region during the Pleistocene. Each advance scoured and shaped the landscape.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+The characteristic Douglas fir, western red cedar, and hemlock came to dominate the dense forests after the weather shifted warmer and wetter starting around seven thousand years ago. Duwamish stories like “North Wind, South Wind” remind us of a people’s relationship to the ice that precedes the establishment of this city by more than sixteen thousand years.
 
-## Conservation victory
+We’re blessed with clean drinking water here. It makes great whiskey. The Cedar River starts as snow and ice high in the Cascades, then drains into Chester Morse Lake. Downstream, it runs through a glacial moraine that serves as a natural filter (the city needs no specialty filtration plant).
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+At the Landsburg Diversion Dam, about a third of the water heads to our taps in Seattle. The remainder continues through a cold, clean urban watershed that snakes through the southern suburbs and into Lake Washington. I’ve fished a section in Renton. You wade through backyards. Lawns meet the narrow water. Occasionally, incredulous homeowners watch you through the patio door. This is the way home for salmon.
 
-## Areas under threat
+Founder Matt Hofmann and team started making whiskey in 2011. Their first bottles were released in 2013. In 2016, Whisky Magazine named Westland World Craft Producer of the Year. Have a glass in winter with a friend in your cozy cabin or apartment. Put on some music and open the window to hear the rain.
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+Westland opened an 80-acre rackhouse and grain-testing complex in the lush Skagit Valley a few years ago. It sits a few miles from both the Skagit River and Padilla Bay. A perfect complement to their SoDo HQ: muddy fields overrun with seasonal snow and snow geese. Bald eagles first scanning for salmon in the tributary creeks, then gorging during the winter die-off.
+
+**Conservation Victory:** The headwaters of the Skagit River are in the roughly six-thousand-hectare (that’s 14,000 acres for us Americans) “Donut Hole” between E.C. Manning and Skagit Valley Provincial Parks. About 15 km (9 mi) north of the border in the rugged Canadian Cascades.
+
+In 2019, Imperial Metals applied for a mining exploration permit. With a grant from the Conservation Alliance, WA Wild built an international coalition of 300+ Tribes, First Nations, officials, and businesses to protect the watershed. By the end of 2019, the campaign convinced British Columbia to halt timber permits there. In 2022, Imperial Metals reached a financial agreement to turn over its claim to the province.
+
+Today, BC is collaborating with First Nations on a proposed Skagit Headwaters Conservation Area. I can’t wait to visit someday and look up from the trail for bald eagles.
+
+**Areas Under Threat:** Roughly four hundred thousand acres of inventoried roadless area lie in the Mt. Baker-Snoqualmie National Forest. Rescission would open these up for timber harvest and road construction.
+
+The Forest Service has an estimated $8 billion-plus infrastructure maintenance backlog. Three hundred seventy thousand miles of road already cut through our national forests. Winter storms routinely wash out even well-maintained roads in the Mt. Baker-Snoqualmie. Hillsides fail – silt rushes into the rivers, disrupting delicate ecosystems. The headwaters of the Skagit, Nooksack, Snoqualmie, and Stillaguamish are all here. Rescission of the Roadless Rule would be harmful.
+
+**The Bottle:**
+
+Westland Flagship American Single Malt Whiskey, 700ml, 92 proof (46% ABV). Aged a minimum of 60 months. Five barley malts: Washington Select Pale, Munich, Extra Special, Brown, and Pale Chocolate.
+
+Rémy Cointreau purchased Westland Distillery in 2017. The French spirits group is now the parent company of this made-in-WA brand.
+
+Donate to WA Wild: <https://wawild.org/engage/donate/>
