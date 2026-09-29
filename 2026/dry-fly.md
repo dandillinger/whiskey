@@ -42,6 +42,4 @@ The Colville alone holds 20 unprotected inventoried roadless areas meeting Wilde
 
 Caymus Vineyards, a family winery based in Napa, took a majority stake in Dry Fly in 2024. The two companies first came together on barrels for aging. The relationship grew from there.
 
-Sign up for WA Wild action alerts: <https://wawild.org/engage/sign-mailing-list/>
-
 Donate to WA Wild: <https://wawild.org/engage/donate/>
