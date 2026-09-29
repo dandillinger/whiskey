@@ -112,3 +112,5 @@ h1 {
 .years { list-style: none; padding: 0; }
 .years li { padding: .9rem 0; border-top: 1px solid var(--rule); }
 .years span { display: block; color: var(--muted); font-size: .95rem; }
+
+.disclaimer { color: var(--muted); font-size: .85rem; font-style: italic; }
