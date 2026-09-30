@@ -15,4 +15,3 @@ cta_label: Sign up for action alerts
 cta_url: https://wawild.org/engage/sign-mailing-list/
 description: Three Washington whiskeys from three watersheds. A Washington Wild auction lot.
 ---
-Page in progress.
