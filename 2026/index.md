@@ -3,7 +3,7 @@ layout: lot
 year: 2026
 draft: false
 title: Washington Whiskeys
-place_line: Three Washington whiskeys from three watersheds
+place_line: Three Washington whiskeys, three conservation stories
 event: Wild Night Out
 event_date: Wed Sep 30, 2026 · Woodland Park Zoo
 contents: Three bottles
@@ -13,5 +13,5 @@ bid_note: Bid on the lot at the silent auction table.
 cta_text: Thank you for supporting Washington Wild. Sign up for action alerts to help protect wild lands and waters across the state.
 cta_label: Sign up for action alerts
 cta_url: https://wawild.org/engage/sign-mailing-list/
-description: Three Washington whiskeys from three watersheds. A Washington Wild auction lot.
+description: Three Washington whiskeys, three conservation stories. A Washington Wild auction lot.
 ---

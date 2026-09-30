@@ -39,9 +39,7 @@ In 2000, WA Wild created the Wild Sky coalition to pursue Wilderness designation
 
 The Wild Sky Wilderness is designated by law, not rule. Our grandchildren’s grandchildren will be able to enjoy the mountains, trails, and rivers. This is one of the best remaining habitats for salmon in the Puget Sound region. What we all lost in Seattle, and the “willow people” lost in the Sammamish valley, remains intact here.
 
-**Areas Under Threat:**
-
-One of my favorite shoulder-season hikes, Mt. Dickerman, is way out on the Mountain Loop Highway not far from Barlow Pass. Most of my trips in the fog and snow have been devoid of other humans, until I descend midday and encounter a few folks headed up. The wind and the vividly colored crustose lichen are magical up there. It’s a sacred place.
+**Areas Under Threat:** One of my favorite shoulder-season hikes, Mt. Dickerman, is way out on the Mountain Loop Highway not far from Barlow Pass. Most of my trips in the fog and snow have been devoid of other humans, until I descend midday and encounter a few folks headed up. The wind and the vividly colored crustose lichen are magical up there. It’s a sacred place.
 
 There are more than three hundred thousand acres of inventoried roadless area left in the Mt. Baker-Snoqualmie National Forest (about two million statewide). This includes a cluster with wilderness potential between the Wild Sky and Alpine Lakes Wildernesses to the south, and the Boulder River and Glacier Peak Wildernesses to the north.
 
