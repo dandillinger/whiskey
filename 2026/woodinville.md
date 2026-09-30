@@ -2,7 +2,7 @@
 layout: bottle
 year: 2026
 order: 2
-draft: true
+draft: false
 title: Woodinville Straight Bourbon (Aged 6 Years)
 place: Woodinville and Quincy
 bottle: Woodinville Straight Bourbon Whiskey, Aged 6 Years, 750ml
