@@ -1,7 +1,7 @@
 ---
 layout: lot
 year: 2026
-draft: true
+draft: false
 title: Washington Whiskeys
 place_line: Three Washington whiskeys from three watersheds
 event: Wild Night Out
@@ -10,7 +10,6 @@ contents: Three bottles
 value: 115
 donor: Dan Dillinger, WA Wild Board Member
 bid_note: Bid on the lot at the silent auction table.
-notice: "[!] Copy will be completed and edited by Wild Night Out"
 cta_text: Thank you for supporting Washington Wild. Sign up for action alerts to help protect wild lands and waters across the state.
 cta_label: Sign up for action alerts
 cta_url: https://wawild.org/engage/sign-mailing-list/
