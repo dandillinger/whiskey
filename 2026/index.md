@@ -3,6 +3,7 @@ layout: lot
 year: 2026
 draft: false
 title: Washington Whiskeys
+tab_title: 2026 Lot
 place_line: Three Washington whiskeys, three conservation stories
 event: Wild Night Out
 event_date: Wed Sep 30, 2026 · Woodland Park Zoo
