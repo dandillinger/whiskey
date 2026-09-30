@@ -2,7 +2,7 @@
 layout: bottle
 year: 2026
 order: 1
-draft: true
+draft: false
 title: Westland Flagship American Single Malt
 place: Seattle
 bottle: Westland Flagship American Single Malt Whiskey, 700ml

@@ -2,7 +2,7 @@
 layout: bottle
 year: 2026
 order: 3
-draft: true
+draft: false
 title: Dry Fly Straight Triticale Whiskey
 place: Spokane
 hero: /assets/img/2026/dry-fly
